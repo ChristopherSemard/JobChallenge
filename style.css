@@ -62,8 +62,14 @@ footer{
     background-color: #316694;
     height:80px;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items:flex-end;
+}
+
+
+footer img{
+    margin:10px;
+
 }
 
 
@@ -94,7 +100,8 @@ form{
 }
 
 form div{
-    display:flex;
+    height:20%;
+
 }
 
 a{
@@ -102,6 +109,13 @@ a{
     color: whitesmoke;
 }
 
+#send{
+    display:flex;
+    justify-content: flex-end;
+}
+
 footer img{
     height:30px;
 }
+
+
