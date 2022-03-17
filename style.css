@@ -288,16 +288,15 @@ footer a i{
     #infos{
         height: 70px;
         display:flex;
+        align-items: center;
         justify-content: space-between;
     }
 
     h1{
-        padding-left: 50px;
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     ul{
-        margin: auto;
     }
     nav{
         width:600px;
