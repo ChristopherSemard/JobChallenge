@@ -87,7 +87,7 @@ h2{
 
 section{
     border-radius:5px;
-    border: black 1px solid;
+    border: rgb(240, 240, 240) 2px solid;
     width:35%;
     height: 25%;
     margin:20px;
@@ -97,6 +97,7 @@ section{
 section img{
     height: 100%;
     width: 100%;
+    border-radius:5px;
     object-fit: cover;
 }
 
@@ -108,7 +109,7 @@ section img{
     transform: translate(-50%, -50%);
     color: white;
     
-    text-shadow: #474747 3px 2px 2px;
+    text-shadow: #474747 0px 5px 5px;
     
 }
 
@@ -177,10 +178,7 @@ form :nth-child(7n){
     padding: 10px;
     border-radius: 4px;
 
-    display: inline-block;
-    margin: 20px auto;
     text-align: center;
-    position: relative;
     cursor: pointer;
   
     
@@ -188,6 +186,10 @@ form :nth-child(7n){
 
 a{
     text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    text-decoration: underline;
     color: whitesmoke;
 }
 
@@ -244,9 +246,9 @@ footer a i{
     }
     section{
         border-radius:5px;
-        border: black 1px solid;
-        width:25%;
         margin:20px;
+        width:35%;
+        height: 25%;
     }
     
     form{
@@ -269,10 +271,6 @@ footer a i{
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-between;
-    }
-    section{
-        width:35%;
-        height: 25%;
     }
     h1{
         margin-top: 10px;
@@ -320,8 +318,6 @@ footer a i{
     }
 
     section{
-        border-radius:5px;
-        border: black 1px solid;
         width:400px;
         height:400px;
         margin:0px;
@@ -341,8 +337,14 @@ footer a i{
         margin: 20px 70px;
         height:400px;
         margin-bottom: 50px;
+        grid-template-columns: 200px 1fr 90px;
+        grid-template-rows: 40px 40px 1fr 50px;
+        grid-template-areas:    "label input input"
+                                "label2 input2 input2"
+                                "label3 input3 input3"
+                                ". . button";
     }
-
+    
     footer{
         height:200px;
         padding-bottom: 50px;
