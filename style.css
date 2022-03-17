@@ -15,9 +15,23 @@ ul{
 p{
     margin:0px;
     padding:0px;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#infos{
+    width: 100%;
+    height:70px;
+    padding:10px;
+    background-color: #316694;
 }
 
 #photo{
+    width: 100%;
     background-color: lightgrey;
     height:80px;
     padding:10px;
@@ -31,77 +45,145 @@ p{
     border: black 1px solid;
 }
 
-#infos{
-    height:80px;
-    background-color: #316694;
-}
 
 .edito{
     background-color: #316694;
 }
 
 h1{
-    
+    color: white;
     height:50px;
     font-size:1.5em;
     margin:0px;
     padding:0px;
     text-align: center;
     text-transform: capitalize;
-    
 }
+
 h2{
     text-align: center;
-    margin:5px;
+    margin:20px 5px 5px 5px;
     padding:0px;
 }
-
-footer{
-    padding-bottom: 10px;
-    margin-top: 20px;
-    background-color: #316694;
-    height:80px;
-    display:flex;
-    justify-content: center;
-    align-items:flex-end;
-}
-
-
-footer img{
-    margin:10px;
-
-}
-
 
 .edito{
     padding:20px;
     text-align: center ;
+    display: flex;
+}
+
+.edito p{
+    padding: 0%;
+    margin: auto;
 }
 
 .projets{
+    height: 500px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-between;
 }
 
 section{
     border-radius:5px;
     border: black 1px solid;
-    width:30%;
+    width:35%;
+    height: 25%;
     margin:20px;
+    position: relative;
+}
+
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projet{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+    text-shadow: #474747 3px 2px 2px;
+    
+}
+
+h3{
+    margin: auto;
     text-align: center;
 }
 
 form{
-    height:140px;
+    height:200px;
     background-color: lightgrey;
     margin:10px;
     padding:10px;
+    display: grid;
+    grid-gap: 5px;
+    align-items: center;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 30px 30px 1fr 40px;
+    grid-template-areas:    "label input input"
+                            "label2 input2 input2"
+                            "label3 input3 input3"
+                            ". . button";
 }
 
-form div{
-    height:20%;
+input{
+    border: rgba(0,0,0,0.4) 1px ;
+}
 
+textarea{
+    resize: none;
+    border: rgba(0,0,0,0.4) 1px ;
+}
+
+
+
+form :nth-child(1n){
+    grid-area: label;
+}
+form :nth-child(2n){
+    grid-area: input;
+    padding: 5px;
+}
+form :nth-child(3n){
+    grid-area: label2;
+}
+form :nth-child(4n){
+    grid-area: input2;
+    padding: 5px;
+}
+form :nth-child(5n){
+    grid-area: label3;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+form :nth-child(6n){
+    grid-area: input3;
+    align-self: flex-start;
+    height:80%;
+    padding: 5px;
+}
+form :nth-child(7n){
+    grid-area: button;
+    border: none;
+    background-color: #8BC34A;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  
+    
 }
 
 a{
@@ -114,8 +196,119 @@ a{
     justify-content: flex-end;
 }
 
-footer img{
-    height:30px;
+footer{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #316694;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+footer a {
+    display: block;
+    width: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+footer a i{
+    margin: auto;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: larger;
+    }
+
+    #infos{
+        height:100px;
+    }
+
+    #photo{
+        height:200px;
+    }
+
+    #photoprofil{
+        display:block;
+        margin:auto;
+        width:200px;
+    }
+    .edito{
+        height:200px;
+    }
+    .edito p{
+        padding: 0% 5%;
+        margin: auto;
+    }
+    section{
+        border-radius:5px;
+        border: black 1px solid;
+        width:25%;
+        margin:20px;
+    }
+    
+    form{
+        height:250px;
+        padding: 30px;
+        grid-template-columns: 120px 1fr 120px;
+        grid-template-rows: 40px 40px 1fr 50px;
+        grid-template-areas:    "label input input"
+                                "label2 input2 input2"
+                                "label3 input3 input3"
+                                ". . button";
+    }
+    footer{
+        height:100px;
+    }
+    
+    .projets{
+        height: 850px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+    section{
+        width:35%;
+        height: 25%;
+    }
+    h1{
+        margin-top: 10px;
+    }
+    nav{
+        margin-top: 10px;
+    }
 }
 
 
+@media screen and (min-width: 992px) {
+
+    #infos{
+        height: 70px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    h1{
+        padding-left: 50px;
+        margin-top: 30px;
+    }
+
+    ul{
+        margin: auto;
+    }
+    nav{
+        width:600px;
+    }
+
+    section{
+        border-radius:5px;
+        border: black 1px solid;
+        width:300px;
+        height:300px;
+        margin:50px;
+    }
+
+}

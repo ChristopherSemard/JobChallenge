@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c52cbb9b58.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,78 +28,67 @@
         </div>
     </header>
     <main>
-        <p class="edito">
+        <div class="edito">
+        <p >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit commodi expedita itaque temporibus aut aliquam reiciendis quas odit eligendi. Nulla quidem libero ipsum eaque aliquam facere odit quas ratione.
-        </p>
+        </p></div>
         <h2>Projets</h2>
         <div class="projets">
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/154/500/500.jpg?hmac=FllRw28Q-FvNcaoMKFebIn1ozCKAz0vitCYTygZJD7I" alt="">
                 <div class="projet">
-                    <h3>Projet 1</h3>
-                    <p>Description P1</p>
+                    <h3>Projet 1Projet 1</h3>
                 </div>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/672/500/500.jpg?hmac=eXbCmHNWZv_8QgsniAgJJ8qmX3hwgsNetEms9KlNjbI" alt="">
                 <div class="projet">
                     <h3>Projet 2</h3>
-                    <p>Description P2</p>
                 </div>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/191/500/500.jpg?hmac=QoRAI8rX-gag9ALaYVbgTGqmrLVAmCir5oK_ERcJtxE" alt="">
                 <div class="projet">
                     <h3>Projet 3</h3>
-                    <p>Description P3</p>
                 </div>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/306/500/500.jpg?hmac=xYmmVM0OCIBaM2cAGgCptS5KceVD00yx9GDgy8NTcog" alt="">
                 <div class="projet">
                     <h3>Projet 4</h3>
-                    <p>Description P4</p>
                 </div>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/35/500/500.jpg?hmac=Nm1EeRrdqcrJIrXvYVakKMB7npbNiaw0EiXJfKUPdrA" alt="">
                 <div class="projet">
                     <h3>Projet 5</h3>
-                    <p>Description P5</p>
                 </div>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="https://i.picsum.photos/id/685/500/500.jpg?hmac=lnsNPNacFnoZyBILLlfASmAxlZtbbUVCnGFWA3mUYNM" alt="">
                 <div class="projet">
                     <h3>Projet 6</h3>
-                    <p>Description P6</p>
                 </div>
             </section>
         </div>
 
         <h2>Contact</h2>
         <form>
-            <div>
-                <label for="name">Prénom</label>
-                <input type="name" name="name" id="name" >
-            </div>
-            <div>
-                <label for="lastname">Nom</label>
-                <input type="lastname" name="lastname" id="lastname" >
-            </div>
-            <div>
-                <label for="msg">Message</label>
-                <input type="msg" name="msg" id="msg" >
-            </div>
+            <label for="name">Prénom</label>
+            <input type="text" name="name" id="name" required="required" placeholder="Your name..." >
+            <label for="lastname">Nom</label>
+            <input type="text" name="lastname" id="lastname" required="required" placeholder="Your last name..." >
+            <label for="msg">Message</label>
+            <textarea  name="msg" id="msg" required="required" placeholder="Write something..."></textarea>   
 
             <input id="send" type="submit" value="Envoyer">
         </form>
     </main>
 
     <footer>
-        <a href="#"><img src="assets/logo-facebook.webp" alt="Logo Facebook"></a>
-        <a href="#"></a><img src="assets/logo-twitter.png" alt="Logo Twitter"></a>
-        <a href="#"></a><img src="assets/logo-linkedin.png" alt="Logo LinkedIn"></a>
+        <a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     </footer>
 </body>
 </html>
