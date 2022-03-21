@@ -46,9 +46,6 @@ header{
 }
 
 
-.edito{
-    background-color: #316694;
-}
 
 h1{
     color: white;
@@ -64,17 +61,6 @@ h2{
     text-align: center;
     margin:20px 5px 5px 5px;
     padding:0px;
-}
-
-.edito{
-    padding:20px;
-    text-align: center ;
-    display: flex;
-}
-
-.edito p{
-    padding: 0%;
-    margin: auto;
 }
 
 .projets{
@@ -282,12 +268,10 @@ margin: 20px 0;
     overflow: auto; /* Enable scroll if needed */
     background-color: #ffffff;
     margin: auto;
-    box-shadow: 0px 0px 500px 50px rgba(0,0,0,0.4) ;
+    box-shadow: 0px 0px 500px 50px rgba(0,0,0,0.8) ;
     border-radius: 10px;
-    padding: 20px;
+    padding:  10px 20px;
     border: 1px solid #888;
-    display:flex;
-    flex-wrap: wrap;
   }
   
 
@@ -318,12 +302,14 @@ margin: 20px 0;
     
 #modal-img {
     height:210px;
+    
  }
 
  #modal-img img{
      
     width:100%;
     height:180px;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
 
  }
@@ -335,6 +321,117 @@ margin: 20px 0;
     background-color: none;
     border: none;
 }
+
+
+#edito{
+    padding:0px;
+    text-align: center ;
+}
+.mySlides img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+  }
+  .prev{
+      left:0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+      background: rgba(0,0,0,0.2);
+    color: #f2f2f2;
+    font-size: 25px;
+    text-shadow: 0 0px 4px rgba(0,0,0,0.8);
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
 
 @media screen and (min-width: 768px) {
     body{
@@ -353,13 +450,6 @@ margin: 20px 0;
         display:block;
         margin:auto;
         width:200px;
-    }
-    .edito{
-        height:200px;
-    }
-    .edito p{
-        padding: 0% 5%;
-        margin: auto;
     }
     section{
         border-radius:5px;
@@ -453,7 +543,7 @@ margin: 20px 0;
     section{
         width:400px;
         height:400px;
-        margin:20px 0px;
+        margin:40px 40px;
     }
 
     section img{
@@ -550,4 +640,10 @@ margin: 20px 0;
         object-fit: cover;
     
      }
+     .mySlides img{
+         width:100%;
+         height: 340px;
+         object-fit: cover;
+     }
+     
 }
