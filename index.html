@@ -1,235 +1,305 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c52cbb9b58.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c52cbb9b58.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        
-        <div id="infos">
-            <h1>Christopher Semard</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#edito">A propos</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="photo">
-            <img id="photoprofil" src="assets/photo_profil.webp" alt="Photo de Christopher Semard">
-        </div>
+      <div id="infos">
+        <h1>Christopher Semard</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#edito">A propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="photo">
+        <img
+          id="photoprofil"
+          src="assets/photo_profil.webp"
+          alt="Photo de Christopher Semard"
+        />
+      </div>
     </header>
     <main>
-        <div class="edito"  id="edito">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit commodi expedita itaque temporibus aut aliquam reiciendis quas odit eligendi. Nulla quidem libero ipsum eaque aliquam facere odit quas ratione.
-            </p>
-        </div>
-        <h2 id="projets">Projets</h2>
-        <div class="projets">
-            <section class="flip-card">
+      <div class="edito" id="edito">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit
+          commodi expedita itaque temporibus aut aliquam reiciendis quas odit
+          eligendi. Nulla quidem libero ipsum eaque aliquam facere odit quas
+          ratione.
+        </p>
+      </div>
+      <h2 id="projets">Projets</h2>
+      <div class="projets">
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/chat.jfif"
+                alt="Photo de chat"
+              />
+              <div class="projet">
+                <h3>Projet 1</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati cupiditate natus id incidunt quae saepe qui cumque,
+                deleniti animi suscipit non nostrum optio vel quia commodi
+                numquam quaerat. Quod, cum.
+              </p>
 
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/154/500/500.jpg?hmac=FllRw28Q-FvNcaoMKFebIn1ozCKAz0vitCYTygZJD7I" alt="">
-                        <div class="projet">
-                            <h3>Projet 1</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>John Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate natus id incidunt quae saepe qui cumque, deleniti animi suscipit non nostrum optio vel quia commodi numquam quaerat. Quod, cum.</p>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/immeuble.jfif"
+                alt="Pohot d'un immeuble"
+              />
+              <div class="projet">
+                <h3>Projet 2</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>Projet 2</h4>
+              <p>djdjjgfdf</p>
 
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn">Voir plus</button>
-                    </div>
-                </div>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/paysage.jfif"
+                alt="Photo de paysage"
+              />
+              <div class="projet">
+                <h3>Projet 3</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati cupiditate natus id incidunt quae saepe qui cumque,
+                deleniti animi suscipit non nostrum optio vel quia commodi
+                numquam quaerat. Quod, cum.
+              </p>
 
-            </section>
-            <section class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/672/500/500.jpg?hmac=eXbCmHNWZv_8QgsniAgJJ8qmX3hwgsNetEms9KlNjbI" alt="">
-                        <div class="projet">
-                            <h3>Projet 2</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Projet 2</h4>
-                        <p>djdjjgfdf</p>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/personne.jfif"
+                alt="Photo d'une personne"
+              />
+              <div class="projet">
+                <h3>Projet 4</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati cupiditate natus id incidunt quae saepe qui cumque,
+                deleniti animi suscipit non nostrum optio vel quia commodi
+                numquam quaerat. Quod, cum.
+              </p>
 
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn">Voir plus</button>
-                    </div>
-                </div>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/ordi.jfif"
+                alt="Photo d'un ordinateur"
+              />
+              <div class="projet">
+                <h3>Projet 5</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati cupiditate natus id incidunt quae saepe qui cumque,
+                deleniti animi suscipit non nostrum optio vel quia commodi
+                numquam quaerat. Quod, cum.
+              </p>
 
-            </section>
-            <section class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/191/500/500.jpg?hmac=QoRAI8rX-gag9ALaYVbgTGqmrLVAmCir5oK_ERcJtxE" alt="">
-                        <div class="projet">
-                            <h3>Projet 3</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>John Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate natus id incidunt quae saepe qui cumque, deleniti animi suscipit non nostrum optio vel quia commodi numquam quaerat. Quod, cum.</p>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+        <section class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="imgprojet"
+                src="assets/foret.jfif"
+                alt="Photo d'une forêt"
+              />
+              <div class="projet">
+                <h3>Projet 6</h3>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h4>John Doe</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati cupiditate natus id incidunt quae saepe qui cumque,
+                deleniti animi suscipit non nostrum optio vel quia commodi
+                numquam quaerat. Quod, cum.
+              </p>
 
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn" >Voir plus</button>
-                    </div>
-                </div>
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn">Voir plus</button>
+            </div>
+          </div>
+        </section>
+      </div>
 
-            </section>
-            <section class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/306/500/500.jpg?hmac=xYmmVM0OCIBaM2cAGgCptS5KceVD00yx9GDgy8NTcog" alt="">
-                        <div class="projet">
-                            <h3>Projet 4</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>John Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate natus id incidunt quae saepe qui cumque, deleniti animi suscipit non nostrum optio vel quia commodi numquam quaerat. Quod, cum.</p>
+      <h2 id="contact">Contact</h2>
+      <form>
+        <label for="name">Prénom</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required="required"
+          placeholder="Your name..."
+        />
+        <label for="lastname">Nom</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          required="required"
+          placeholder="Your last name..."
+        />
+        <label for="msg">Message</label>
+        <textarea
+          name="msg"
+          id="msg"
+          required="required"
+          placeholder="Write something..."
+        ></textarea>
 
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn" >Voir plus</button>
-                    </div>
-                </div>
-
-            </section>
-            <section class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/35/500/500.jpg?hmac=Nm1EeRrdqcrJIrXvYVakKMB7npbNiaw0EiXJfKUPdrA" alt="">
-                        <div class="projet">
-                            <h3>Projet 5</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>John Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate natus id incidunt quae saepe qui cumque, deleniti animi suscipit non nostrum optio vel quia commodi numquam quaerat. Quod, cum.</p>
-
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn" >Voir plus</button>
-                    </div>
-                </div>
-
-            </section>
-            <section class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="imgprojet" src="https://i.picsum.photos/id/685/500/500.jpg?hmac=lnsNPNacFnoZyBILLlfASmAxlZtbbUVCnGFWA3mUYNM" alt="">
-                        <div class="projet">
-                            <h3>Projet 6</h3>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>John Doe</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate natus id incidunt quae saepe qui cumque, deleniti animi suscipit non nostrum optio vel quia commodi numquam quaerat. Quod, cum.</p>
-
-                        <!-- Trigger/Open The Modal -->
-                        <button class="myBtn" >Voir plus</button>
-                    </div>
-                </div>
-
-            </section>
-        </div>
-
-        <h2  id="contact">Contact</h2>
-        <form>
-            <label for="name">Prénom</label>
-            <input type="text" name="name" id="name" required="required" placeholder="Your name..." >
-            <label for="lastname">Nom</label>
-            <input type="text" name="lastname" id="lastname" required="required" placeholder="Your last name..." >
-            <label for="msg">Message</label>
-            <textarea  name="msg" id="msg" required="required" placeholder="Write something..."></textarea>   
-
-            <input id="send" type="submit" value="Envoyer">
-        </form>
+        <input id="send" type="submit" value="Envoyer" />
+      </form>
     </main>
 
     <footer>
-        <a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     </footer>
 
-
-        <!-- Modal content -->
+    <!-- Modal content -->
     <!-- The Modal -->
     <div id="modal">
-        <div id="modal-img">
-
-        </div>
-        <div id="modal-content">
-
-        </div>
-        <span class="close">&times;</span>
+        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+      <div id="modal-img">
+       
+      </div>
+      <div id="modal-content"></div>
     </div>
 
     <script>
-        // Get the modal
-        let modal = document.getElementById("modal-content");
-        
-        // Get the button that opens the modal
-        let btn = document.getElementsByClassName("myBtn");
-        
-        // Get the <span> element that closes the modal
-        let content = document.getElementsByClassName("flip-card-back");
+      // Get the modal
+      let modal = document.getElementById("modal");
+ // Get the modal content
+ let modalContent = document.getElementById("modal-content");
+      // Get the button that opens the modal
+      let btn = document.getElementsByClassName("myBtn");
 
-        // Get the modal
-        let modalimg = document.getElementById("modal-img");
-        
-        // Get the <span> element that closes the modal
-        let img = document.getElementsByClassName("imgprojet");
+      // Get the <span> element that closes the modal
+      let content = document.getElementsByClassName("flip-card-back");
 
-        // Get the <span> element that closes the modal
-        let span = document.getElementsByClassName("close");
-        
-        
+      // Get the modal
+      let modalimg = document.getElementById("modal-img");
 
-        console.log(img)
+      // Get the <span> element that closes the modal
+      let img = document.getElementsByClassName("imgprojet");
 
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close");
 
-        // When the user clicks the button, open the modal 
+      console.log(img);
 
-        for (let i = 0; i < btn.length; i++) {
+      // When the user clicks the button, open the modal
+
+      for (let i = 0; i < btn.length; i++) {
         let thisBtn = btn[i];
         let thisContent = content[i];
         let thisImg = img[i];
         console.log(thisImg);
-        thisBtn.addEventListener("click", function(){
-            modal.innerHTML = thisContent.innerHTML;
+        console.log(thisContent);
+        thisBtn.addEventListener(
+          "click",
+          function () {
+            modalContent.innerHTML = thisContent.innerHTML;
             modal.style.display = "block";
-            modalimg.innerHTML = thisImg.innerHTML;
+            modalimg.innerHTML = "<img src='"+thisImg.src+"'/>";
+            console.log(thisImg);
             modalimg.style.display = "block";
-        }, false);
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        }
+          },
+          false
+        );
+        span[0].onclick = function () {
+          modal.style.display = "none";
+        };
+      }
 
-        // When the user clicks on <span> (x), close the modal
+      // When the user clicks on <span> (x), close the modal
 
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-        </script>
-    
-</body>
+      };
+    </script>
+  </body>
 </html>
