@@ -361,7 +361,28 @@
 
         function validate()
         {
-            
+            var firstName = document.getElementById("name").value;
+            var lastName = document.getElementById("lastname").value;
+            var msgContent = document.getElementById("msg").value;
+            var firstNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+            var lastNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+            var firstNameResult = firstNameRGEX.test(firstName);
+            var lastNameResult = lastNameRGEX.test(lastName);
+            alert("Prénom :"+firstNameResult + ", Nom: "+lastNameResult);
+
+            if(firstNameResult == false)
+            {
+                alert('Prénom invalide');
+                return false;
+            }
+
+            if(lastNameResult == false)
+            {
+                alert('Nom invalide');
+                return false;
+            }
+
+            return true;
         }
 
 
