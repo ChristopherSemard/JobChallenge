@@ -43,17 +43,17 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-            <img src="assets/slider/img1.jpg" >
+            <img src="assets/slider/img1.jpg" alt="Photo de nature">
             <div class="text">Caption Text</div>
             </div>
         
             <div class="mySlides fade">
-            <img src="assets/slider/img2.jpg" >
+            <img src="assets/slider/img2.jpg"  alt="Photo de palmiers">
             <div class="text">Caption Two</div>
             </div>
         
             <div class="mySlides fade">
-            <img src="assets/slider/img3.jpg" >
+            <img src="assets/slider/img3.jpg" alt="Photo de paysage" >
             <div class="text">Caption Three</div>
             </div>
         
@@ -233,7 +233,7 @@
           name="name"
           id="name"
           required="required"
-          placeholder="Your name..."
+          placeholder="Votre prénom..."
         />
         <label for="lastname">Nom</label>
         <input
@@ -241,15 +241,14 @@
           name="lastname"
           id="lastname"
           required="required"
-          placeholder="Your last name..."
+          placeholder="Votre nom..."
         />
         <label for="msg">Message</label>
         <textarea
           name="msg"
           id="msg"
           required="required"
-          max_length="200"
-          placeholder="Write something..."
+          placeholder="Ecrivez votre message ici..."
         ></textarea>
 
         <input id="send" type="submit" value="Envoyer" />
@@ -257,15 +256,15 @@
     </main>
 
     <footer>
-      <a href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="#"><em class="fa-brands fa-facebook-square fa-2x"></em></a>
+      <a href="#"><em class="fa-brands fa-twitter-square fa-2x"></em></a>
+      <a href="#"><em class="fa-brands fa-linkedin fa-2x"></em></a>
     </footer>
 
     <!-- Modal content -->
     <!-- The Modal -->
     <div id="modal">
-        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+        <span class="close"><em class="fa-solid fa-xmark"></em></span>
       <div id="modal-img">
        
       </div>
@@ -329,7 +328,7 @@
 
 
 
-        var slideIndex = 1;
+        let slideIndex = 1;
         showSlides(slideIndex);
 
         // Next/previous controls
@@ -343,9 +342,9 @@
         }
 
         function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
@@ -361,14 +360,16 @@
 
         function validate()
         {
-            var firstName = document.getElementById("name").value;
-            var lastName = document.getElementById("lastname").value;
-            var msgContent = document.getElementById("msg").value;
-            var firstNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
-            var lastNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
-            var firstNameResult = firstNameRGEX.test(firstName);
-            var lastNameResult = lastNameRGEX.test(lastName);
-            alert("Prénom :"+firstNameResult + ", Nom: "+lastNameResult);
+            let firstName = document.getElementById("name").value;
+            let lastName = document.getElementById("lastname").value;
+            let msgContent = document.getElementById("msg").value;
+            let firstNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,100}$/u;
+            let lastNameRGEX = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,100}$/u;
+            let msgContentRGEX = /^[A-Za-z]{1,500}$/
+            let firstNameResult = firstNameRGEX.test(firstName);
+            let lastNameResult = lastNameRGEX.test(lastName);
+            let msgContentResult = msgContentRGEX.test(msgContent);
+            alert("Prénom : "+firstNameResult + " | Nom : "+lastNameResult + " | Message : " + msgContentResult);
 
             if(firstNameResult == false)
             {
@@ -379,6 +380,12 @@
             if(lastNameResult == false)
             {
                 alert('Nom invalide');
+                return false;
+            }
+
+            if(msgContentResult == false)
+            {
+                alert('Message invalide');
                 return false;
             }
 

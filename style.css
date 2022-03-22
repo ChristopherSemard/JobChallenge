@@ -199,7 +199,7 @@ footer a {
     display: flex;
     align-items: flex-end;
 }
-footer a i{
+footer a em{
     margin: auto;
     color: aliceblue;
 }
@@ -318,7 +318,6 @@ margin: 20px 0;
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: none;
     border: none;
 }
 
